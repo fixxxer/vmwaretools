@@ -1,7 +1,8 @@
 # Script: Install pre-requisites SQL 2014 using vRA Component Services
 # Author: Anibal Avelar <aavelar@vmware.com>
-# Date: Jul 11, 2017
-# Version: 1.1
+# Date: Oct 17, 2017
+# Version: 1.2
+# Support for Win 2016
 # Based on work from Juan Manuel Silva Koch <Juan.Silva@Cloudcontinuity.com.mx>
 
 $MountPath = "Srmjump02\sql2014"
@@ -35,6 +36,7 @@ $WindowsVersion = [environment]::OsVersion.Version
 #Añadir .NET 3.5 en cualquiera de sus versiones
 If (($WindowsVersion.Major -eq 6) -and ($WindowsVersion.Minor -lt 2)) {Add-WindowsFeature AS-Net-Framework;}
 Elseif (($WindowsVersion.Major -eq 6) -and ($WindowsVersion.Minor -ge 2)) {Add-WindowsFeature Net-Framework-Core -Source $sxsdir;}
+Elseif (($WindowsVersion.Major -eq 10) -and ($WindowsVersion.Minor -eq 0)) {Add-WindowsFeature Net-Framework-Core -Source $sxsdir;}
 
 #Añadir reglas de firewall necesarias para SQL
 netsh advfirewall firewall add rule name="SQL Instancia" dir=in action=allow protocol=TCP localport=1433

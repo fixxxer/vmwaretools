@@ -1,7 +1,8 @@
 # Script: Install pre-requisites SharePoint 2016 using vRA Component Services
 # Author: Anibal Avelar <aavelar@vmware.com>
-# Date: Jul 19, 2017
-# Version: 1.0
+# Date: Oct 11, 2017
+# Version: 1.1
+# Changes for Win 2016
 # Based on work from Juan Manuel Silva Koch <Juan.Silva@Cloudcontinuity.com.mx>
 
 
