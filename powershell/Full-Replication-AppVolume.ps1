@@ -41,7 +41,7 @@ $TargetAppStacks = Invoke-RestMethod -WebSession $TargetServerSession -Method Ge
 $TargetAssignments = (Invoke-RestMethod -WebSession $TargetServerSession -Method Get -Uri "https://$TargetServer/cv_api/assignments").assignments
 foreach ($Assignment in $TargetAssignments)
 {
-    forearch ($TargetAppStack in $TargetAppStacks)
+    foreach ($TargetAppStack in $TargetAppStacks)
     {
         Invoke-RestMethod -WebSession $TargetServerSession -Method Post -Uri "https://$TargetServer/cv_api/assignments?action_type=unassign&id=$($TargetAppStack.id)&assignments%5B0%5D%5Bentity_type%5D=$($assignment.entityt)&assignments%5B0%5D%5Bpath%5D=$($assignment.entity_dn)"
     }
