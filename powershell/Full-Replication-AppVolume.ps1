@@ -43,7 +43,9 @@ foreach ($Assignment in $TargetAssignments)
 {
     foreach ($TargetAppStack in $TargetAppStacks)
     {
-        Invoke-RestMethod -WebSession $TargetServerSession -Method Post -Uri "https://$TargetServer/cv_api/assignments?action_type=unassign&id=$($TargetAppStack.id)&assignments%5B0%5D%5Bentity_type%5D=$($assignment.entityt)&assignments%5B0%5D%5Bpath%5D=$($assignment.entity_dn)"
+        if ( $TargetAppStack.id -eq $assignment.snapvol_id ) {
+            Invoke-RestMethod -WebSession $TargetServerSession -Method Post -Uri "https://$TargetServer/cv_api/assignments?action_type=unassign&id=$($TargetAppStack.id)&assignments%5B0%5D%5Bentity_type%5D=$($assignment.entityt)&assignments%5B0%5D%5Bpath%5D=$($assignment.entity_dn)"
+        }   
     }
 }
 # end section to delete target assigments
