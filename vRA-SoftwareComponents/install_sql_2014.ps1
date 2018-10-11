@@ -7,7 +7,7 @@
 $MountPath = "Srmjump02\sql2014"
 $InstanceName = "Prueba"
 $MountUsername = "CPN\vra_service"
-$MountPassword = "vRa!17.3/3"
+$MountPassword = "VMware1!"
 
 $SQLSVCAccount = "Administrator"
 $SQLSVCAccountPassword = "VMware1!"

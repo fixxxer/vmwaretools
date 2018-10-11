@@ -6,7 +6,7 @@
 
 $MountPath = "Srmjump02\sql2014"
 $MountUsername = "CPN\vra_service"
-$MountPassword = "vRa!17.3/3"
+$MountPassword = "VMware1!"
 
 $ISOFileName = "SW_DVD5_SharePoint_Server_2016_64Bit_English_MLF_X20-97223.iso"
 

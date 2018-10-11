@@ -1,15 +1,15 @@
 # Script: Install pre-requisites SQL 
-# Author: Servicio Administración Tributaria SAT
+# Author: Anibal Avelar <aavelar@vmware.com>
 # Date:   September 2017  
 # Version: 2.0
 
 $MountPath = "192.168.1.2\Scripts\ISOS"
 $InstanceName = "MSSQLSERVER"
 $MountUsername = "JM\jmadmin"
-$MountPassword = "Password01"
+$MountPassword = "VMware1!"
 
 $SQLSVCAccount = "JM\jmadmin"
-$SQLSVCAccountPassword = "Password01"
+$SQLSVCAccountPassword = "VMwaere1!"
 
 $SQLAdmin = "jm\jmadmin"
 

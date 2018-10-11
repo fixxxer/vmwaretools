@@ -1,8 +1,11 @@
-
+# Script: Install IIS under Windows 2016 using vRA Component Services
+# Author: Anibal Avelar <aavelar@vmware.com>
+# Date: Jul 18, 2017
+# Version: 1.1
 
 $MountPath = "Srmjump02\sql2014"
 $MountUsername = "CPN\vra_service"
-$MountPassword = "vRa!17.3/3"
+$MountPassword = "VMware1!"
 
 $ISOFileNameWin = "SW_DVD9_Win_Svr_STD_Core_and_DataCtr_Core_2016_64Bit_English_-3_MLF_X21-30353.iso"
 

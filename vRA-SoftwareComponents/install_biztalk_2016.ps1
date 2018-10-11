@@ -7,7 +7,7 @@
 
 $MountPath = "Srmjump02\sql2014"
 $MountUsername = "CPN\vra_service"
-$MountPassword = "vRa!17.3/3"
+$MountPassword = "VMware1!"
 
 $ISOFileNameWin = "SW_DVD5_BizTalk_Server_Ent_2016_English_MLF_X21-21277.iso"
 

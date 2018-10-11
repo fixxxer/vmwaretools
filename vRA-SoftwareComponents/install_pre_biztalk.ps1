@@ -6,7 +6,7 @@
 
 $MountPath = "Srmjump02\sql2014"
 $MountUsername = "CPN\vra_service"
-$MountPassword = "vRa!17.3/3"
+$MountPassword = "VMware1!"
 
 $ISOFileNameWin = "en_windows_server_2012_r2_x64_dvd_2707946.iso"
 
